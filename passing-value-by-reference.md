@@ -1,25 +1,6 @@
-# Reference types
+# Passing value by reference
 
-A set of examples how to pass values or functions by reference in the C++ programming language.
-
-## basics - getting address
-```cpp
-#include <iostream>
-
-int main()
-{
-    int magicNumber = 42;
-    int *magicPointer = &magicNumber;
-
-    int againNumber = *magicPointer;
-
-    std::cout << magicNumber << std::endl;  // 42
-    std::cout << magicPointer << std::endl; // 0x3e7cfff9f0
-    std::cout << againNumber << std::endl;  // 42
-}
-```
-
-## int, bool (and other primitives)
+## int and other primitives
 
 ```cpp
 #include <iostream>
