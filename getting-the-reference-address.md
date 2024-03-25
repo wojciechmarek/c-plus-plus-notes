@@ -1,4 +1,4 @@
-# Getting th reference address
+# Getting the reference address
 
 ## int or other primitives
 
@@ -65,15 +65,17 @@ int main()
     person.firstName = "John";
     person.lastName = "Doe";
 
-    // creating a pointer - it points to the person's address
+    // creating a pointer of an object:
     Person *personPointer = &person;
 
-    // accessing the object's values using pointer object:
+    // accessing the object's values using pointer:
     std::cout << personPointer->firstName << std::endl;  // John
-    std::cout << (*personPointer).lastName << std::endl; // Doe (arrow syntax is better)
+    std::cout << (*personPointer).lastName << std::endl; // Doe (alternative dereference style)
 
     personPointer->sayHello();
 
-    // NOTE: -> syntax allows to dereference object's value
+    // NOTE:
+    // -> syntax allows to dereference object's value (is used with object's pointer)
+    // . syntax allows to access regular object's value (is used with regular object)
 }
 ```

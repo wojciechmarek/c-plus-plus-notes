@@ -14,9 +14,9 @@ int main()
 {
     int magicNumber = 42;
 
-    std::cout << "The magic number is: " << magicNumber << std::endl;
+    std::cout << "The magic number is: " << magicNumber << std::endl; // 42
     processData(magicNumber);
-    std::cout << "The magic number after processing is: " << magicNumber << std::endl;
+    std::cout << "The magic number after processing is: " << magicNumber << std::endl; // 43
 }
 ```
 
@@ -47,13 +47,13 @@ int main()
 
 void processData(std::string &text) 
 {
-    // remember: string is inside the std namespace
+    // remember: string is inside the "std" namespace
     std::cout << text << std::endl;
 }
 
 int main()
 {
-    std::string magicText = "Greetings to the World"; 
+    std::string magicText = "Greetings from the World"; 
 
     processData(magicText);
 }
@@ -71,14 +71,14 @@ void processData(char *text)
 
 int main()
 {
-    // char magicText[22] - in C "strings" are represented by array of chars:
-    char magicText[] = "Greetings to the Mars"; 
+    // in C "strings" are represented by array of chars:
+    char magicText[] = "Greetings from the Mars"; // here: char magicText[22]
 
     processData(magicText);
 }
 ```
 
-## objects
+## object
 
 ```cpp
 #include <iostream>
@@ -109,7 +109,7 @@ int main()
 }
 ```
 
-## functions
+## function
 
 ```cpp
 #include <iostream>
