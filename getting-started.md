@@ -1,8 +1,15 @@
 # Getting started
 
+## variable
+```cpp
+int x;      // declaration
+x = 10;     // initialization
+int y = 20; // definition = declaration + initialization
+```
+
 ## function and arguments naming
 ```cpp
-// function declaration (optional) - just saying the function with given name exists further in the code
+// function declaration or prototype (optional) - just saying the function with given name exists further in the code
 // int, int - known as the formal arguments 
 int multiply(int, int);
 
