@@ -9,15 +9,19 @@ int main()
 {
     int magicNumber = 42;
 
-    // creating a pointer - it references a location in memory of magicNumber
+    // creating an alias - now two named variables (magicNumber and magicAlias) will update the same value
+    int &magicAlias = magicNumber;
+    magicAlias = 24;
+
+    // creating a pointer - it references a location in memory of magicNumber (0x3de1....)
     int *magicPointer = &magicNumber;
 
     // dereferencing - obtaining (again) a value stored in the location
     int againNumber = *magicPointer;
 
-    std::cout << magicNumber << std::endl;  // 42
-    std::cout << magicPointer << std::endl; // 0x3e7cfff9f0
-    std::cout << againNumber << std::endl;  // 42
+    std::cout << magicNumber << std::endl;  // 24, because magicAlias set the value
+    std::cout << magicPointer << std::endl; // 0x3e7cfff9f0 (might be different)
+    std::cout << againNumber << std::endl;  // 24
 }
 ```
 

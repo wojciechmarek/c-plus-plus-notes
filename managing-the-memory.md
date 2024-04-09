@@ -1,5 +1,14 @@
 # Managing the memory
 
+## Demo
+
+- **stack** - place for variables declared in the standard way (static way), managed by compiler (if compiler see a variable in the main function it will automatically reserve the space for it, so we know in advance how much memory we will need for such variable).
+- **heap** - place for objects, array or variables created in the dynamic way. Managed by the Garbage Collector programmer or by a programmer (possible memory leaks).
+
+![demo](https://i.stack.imgur.com/oew8U.png)
+
+> Styles below are about dynamic memory allocation (on the heap).
+
 ## C style
 
 Three main keywords: **malloc/calloc** and **free**.
